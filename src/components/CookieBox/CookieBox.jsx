@@ -24,7 +24,10 @@ const CookieBox = ({ setIsCookieDialogOpen }) => {
           </p>
         </div>
         <div className="flex flex-col gap-2">
-          <button className="cursor-pointer uppercase w-full px-6 py-2 text-xs bg-[#531652] text-[#F5EEE5]">
+          <button
+            onClick={() => setIsCookieDialogOpen(false)}
+            className="cursor-pointer uppercase w-full px-6 py-2 text-xs bg-[#531652] text-[#F5EEE5]"
+          >
             Accept All Cookies
           </button>
           <button className="cursor-pointer uppercase w-full px-6 py-2 text-xs border border-[#531652] text-[#531652] bg-[#F5EEE5]">
