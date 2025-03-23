@@ -13,9 +13,9 @@ const ProductFeatures = () => {
       <div className="flex flex-col gap-40">
         <EachFeature
           videoSrc={SlackFeatureVideo1}
-          heading={"Now is your moment to build a better tomorrow"}
+          heading={"Communicate in countless ways from one place"}
           subheading={
-            "We've seen what the future can be. Now it's time to decide what it will be."
+            "Slack is built for bringing people and information together. Type things out. Talk things through. Invite external organisations into the conversation."
           }
         />
         <EachFeature
@@ -50,7 +50,7 @@ const EachFeature = ({ videoSrc, videoOrder, heading, subheading }) => {
   return (
     <div className="flex gap-20">
       <div className={`order-${videoOrder}`}>
-        <video autoPlay muted className="max-w-[550px] rounded-[5px]">
+        <video autoPlay muted loop className="max-w-[550px] rounded-[5px]">
           <source src={videoSrc} type="video/webm" />
         </video>
       </div>
