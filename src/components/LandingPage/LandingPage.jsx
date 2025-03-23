@@ -9,7 +9,7 @@ import ProductFeatures from "./ProductFeatures";
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col bg-[#F5EEE5] items-center px-40">
+    <div className="flex flex-col bg-[#F5EEE5] items-center px-40 max-sm:px-4">
       <Navbar />
       <HeroSection />
       <CompaniesSlider />

@@ -9,7 +9,7 @@ import { FcGoogle } from "react-icons/fc";
 
 export const HeroSection = () => {
   return (
-    <section className="flex items-center justify-between gap-20 py-20 w-full">
+    <section className="flex items-center max-sm:flex-col justify-between gap-20 py-20 w-full">
       <div className="flex flex-col gap-6">
         <div>
           <h1 className="text-6xl font-bold leading-[1.05] tracking-wide">
@@ -36,7 +36,12 @@ export const HeroSection = () => {
       </div>
       <div>
         <div className="relative">
-          <video autoPlay muted loop className="max-w-[550px] rounded-[20px]">
+          <video
+            autoPlay
+            muted
+            loop
+            className="max-w-[550px] max-sm:max-w-[350px] rounded-[20px]"
+          >
             <source src={SlackVideo} type="video/webm" />
           </video>
           <div className="absolute -top-4 left-28 rounded-xl font-bold px-3 py-1 bg-white shadow-md">

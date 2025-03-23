@@ -48,9 +48,14 @@ const ProductFeatures = () => {
 
 const EachFeature = ({ videoSrc, videoOrder, heading, subheading }) => {
   return (
-    <div className="flex gap-20">
+    <div className="flex gap-20 max-sm:flex-col max-sm:items-center">
       <div className={`order-${videoOrder}`} style={{ order: videoOrder }}>
-        <video autoPlay muted loop className="max-w-[550px] rounded-[5px]">
+        <video
+          autoPlay
+          muted
+          loop
+          className="max-w-[550px] max-sm:max-w-[350px] rounded-[5px]"
+        >
           <source src={videoSrc} type="video/webm" />
         </video>
       </div>

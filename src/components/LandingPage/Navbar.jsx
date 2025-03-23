@@ -10,8 +10,8 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center gap-10 py-5 w-full">
-      <div className="flex items-center gap-8">
+    <nav className="flex max-sm:flex-col justify-between items-center gap-10 py-5 w-full">
+      <div className="flex items-center gap-8 max-sm:gap-4">
         <div>
           <img src={SlackLogo} alt="slack logo" width="120" height="50" />
         </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
           <p>Pricing</p>
         </div>
       </div>
-      <div className="flex items-center gap-10">
+      <div className="flex items-center gap-10 max-sm:gap-4">
         <div>
           <IoSearch className="text-xl" />
         </div>
@@ -32,10 +32,10 @@ const Navbar = () => {
           <p className="text-sm font-medium">Sign In</p>
         </div>
         <div className="flex gap-4 items-center">
-          <button className="cursor-pointer uppercase font-medium border-2 text-xs px-4 py-2 border-[#531652] text-[#531652] rounded-sm">
+          <button className="cursor-pointer max-sm:px-2 uppercase font-medium border-2 text-xs px-4 py-2 border-[#531652] text-[#531652] rounded-sm">
             Talk to Sales
           </button>
-          <button className="cursor-pointer uppercase font-medium border-2 text-xs bg-[#531652] border-[#531652] px-4 py-2 text-[#F5EEE5] rounded-sm">
+          <button className="cursor-pointer max-sm:px-2 uppercase font-medium border-2 text-xs bg-[#531652] border-[#531652] px-4 py-2 text-[#F5EEE5] rounded-sm">
             Try for Free
           </button>
         </div>
