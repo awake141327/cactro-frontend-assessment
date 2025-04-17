@@ -14,7 +14,7 @@ function App() {
       {isCookieDialogOpen && (
         <CookieBox setIsCookieDialogOpen={setIsCookieDialogOpen} />
       )}
-      Add Some Changes to the New Branch.
+      Add Some Changes to the New Branch. Now pushing changes to the new branch.
     </div>
   );
 }
